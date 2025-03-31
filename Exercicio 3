@@ -1,0 +1,8 @@
+import math
+
+def area_circulo(diametro: int) -> float:
+    return math.pi * diametro
+
+# Exemplo de uso
+diametro = 10
+print(f"O comprimento da circunferência é: {area_circulo(diametro):.2f}")
