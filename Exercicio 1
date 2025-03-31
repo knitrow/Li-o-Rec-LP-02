@@ -1,0 +1,6 @@
+def repeat(s, x):
+    for i in range(x):
+        print(s)
+
+# Exemplo de uso:
+repeat("Olá, Mundo!", 3)
