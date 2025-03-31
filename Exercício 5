@@ -1,0 +1,19 @@
+import sys
+
+def main():
+    if len(sys.argv) != 2:
+        print("Uso correto: python script.py <numero_maximo_tentativas>")
+        sys.exit(1)
+    
+    try:
+        max_tentativas = int(sys.argv[1])
+        if max_tentativas <= 0:
+            raise ValueError
+    except ValueError:
+        print("Erro: O número máximo de tentativas deve ser um inteiro positivo.")
+        sys.exit(1)
+    
+    print(f"Número máximo de tentativas definido para: {max_tentativas}")
+
+if __name__ == "__main__":
+    main()
